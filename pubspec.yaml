@@ -1,0 +1,65 @@
+name: restaurant_app
+description: App with flutter_bloc, sqlite
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  # Utils
+  collection: any
+  async: any
+  meta: any
+  path: any
+
+  drift: ^2.19.1+1
+  drift_flutter: ^0.1.0
+  cupertino_icons: ^1.0.2
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  flutter_bloc: ^8.1.6
+  path_provider: ^2.1.4
+  ulid4d: ^3.0.0-beta
+  money2: ^5.2.1
+  sqlite3: ^2.4.5
+  sqlite3_flutter_libs: ^0.5.24
+  built_collection: ^5.1.1
+  equatable: ^2.0.5
+  rxdart: ^0.28.0
+  l: ^4.0.2
+  octopus: ^0.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  drift_dev: ^2.19.1
+  build_runner: ^2.4.11
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+  flutter_gen: ^5.6.0
+  flutter_gen_runner: ^5.6.0
+
+flutter:
+  uses-material-design: true
+
+flutter_gen:
+  output: lib/src/gen/
+  line_length: 120 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
